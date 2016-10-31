@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Markov 1</title>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+    <script src="libraries/rita-full.js" type="text/javascript"></script>
+
+    <script src="sketch.js" type="text/javascript"></script>
+    <script src="markovword.js" type="text/javascript"></script>
+
+    <style>
+      body {
+        
+        padding: 20px;
+
+        background-color: #a53855;
+
+      }
+
+      .markov {
+        padding: 16px;
+        background-color: #f7f7f7;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <h1>Power</h1>
+
+  <!--   <p>This page demonstrates generating text from a Markov chain.  The program reads in text from the box below and generates new text based on word-based "n-gram" probabilities from the source text.  However, the words themselves aren't used and instead the n-grams are sequenced by "parts of speech."  A separate list of words by parts of speech is maintained and substituted in afterwards.  <a href="https://github.com/shiffman/A2Z-F16">File issues and view source on github</a>.</p> -->
+
+
+    <p>
+      <textarea id="text" cols="100" rows="15">A lie is simply a lie. It draws its strength from belief. Stop believing in what hurts you. Power. Nayyirah Waheed.</textarea>
+    </p>
+
+    <p>
+      <button id="generate">generate</button>
+      <button id="clear">clear</button>
+    </p>
+
+    <p id ="results"></p>
+  </body>
+</html>
+
